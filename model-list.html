@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Attribuisco titolo all'intestazione della pagina nel browser-->
+    <title>Building Digital Twin App</title>
+    <!--Attribuisco icona favicon all'intestazione della pagina nel browser-->
+    <link rel="icon" type="image/x-icon" href="./static/dt_favicon.ico">
+    <!--Collego HTML a file CSS per gli stili di visualizzazione-->
+    <link rel="stylesheet" href="style.css"> <!---->
+    <!--Collego HTML a Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!--Inserisco un header in alto alla pagina-->
+    <header>
+        <!--Logo-->
+        <img class="spinning logo" src="./static/dt_logo.svg" alt="dt logo">
+        <!--Titolo a sinistra-->
+        <h3>Building Digital Twin App</h3>
+        <!--Titolo a destra-->
+        <h4>| Buildings</h4>
+    </header>
+
+    <!--Creo una sezione contenente vari buttons con link a altre app-->
+    <section id="projects-container" class="project-list">
+        <!--Carta-->
+        <div class="card">
+            <img src="./static/dt_logo.svg" width="35"></img>
+            <h2>Sample project</h2>
+            <h3 class="projectId">Sample project id</h3>
+            <h5>Sample project address</h5>
+            <a class="button" href="./model-viewer.html">Model!</a>
+        </div>
+    </section>
+
+    <script type="module" src="./model-list.js"></script>
+    
+</body>
+</html>
